@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sovereignagency.netlify.app/sitemap.xml
