@@ -652,20 +652,20 @@
         <h2>Ready to find your route?</h2>
         <p>Tell us where you're trying to get to. We'll tell you what it takes to arrive.</p>
       </div>
-      <form onsubmit="event.preventDefault(); alert('Thanks — we\'ll be in touch shortly.');">
+      <<form name="sovereign-contact" method="POST" data-netlify="true">
         <div class="form-row">
           <div>
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Jane Founder" required>
+            <<input id="name" name="name" type="text" placeholder="..." required>
           </div>
           <div>
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="jane@company.com" required>
+            <><input id="name" name="name" type="text" placeholder="..." required>
           </div>
         </div>
         <div>
           <label for="project">Project type</label>
-          <select id="project">
+          <<select id="project" name="project">
             <option>Brand & Strategy</option>
             <option>Growth Marketing</option>
             <option>Web & Product</option>
@@ -674,7 +674,7 @@
         </div>
         <div>
           <label for="message">Message</label>
-          <textarea id="message" placeholder="Where are you trying to get to?"></textarea>
+          <<textarea id="message" name="message" placeholder="Where ..."></textarea>
         </div>
         <button type="submit" class="submit-btn">Send it over</button>
       </form>
